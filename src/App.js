@@ -8,10 +8,14 @@ function App() {
     <>
     <div>
       <Link to="/">Home</Link>
-      <Link to="/user">user</Link>
+      <Link to="/user">Próximo</Link>
+      <Link to="/dados">Dados</Link>
     </div>
     {routes.map((value, key) => {
-      return <Route key={key} path={value.path} component={value.component} exact={value.exact}></Route>
+      return <Route key={key} 
+      path={value.path} 
+      component={value.component} 
+      exact={value.exact}></Route>
     })}
     </>
   );

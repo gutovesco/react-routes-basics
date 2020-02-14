@@ -1,5 +1,7 @@
 import Home from "./pages/home/Home";
 import User from "./pages/user/User";
+import Dados from "./pages/dados/Dados";
+
 
  const routes = [
     {
@@ -10,6 +12,11 @@ import User from "./pages/user/User";
     {
         path: "/user",
         component: User,
+        exact: true
+    },
+    {
+        path: "/dados",
+        component: Dados,
         exact: true
     }
 ]
